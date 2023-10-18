@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "dev": "deno run -A --unstable --watch main.ts",
+    "start": "deno run -A --unstable main.ts",
+    "build:win64": "deno compile -A --output dist/moroware_win64.exe --unstable --include gui_systems/main.ts --include gui_systems/ok.ts  --include gui_systems/no_ok.ts --target x86_64-pc-windows-msvc main.ts",
+    "build:mac_x86_64": "deno compile -A --output dist/moroware_x86_64-apple-darwin --unstable --include gui_systems/main.ts --include gui_systems/ok.ts  --include gui_systems/no_ok.ts --target x86_64-apple-darwin main.ts",
+    "build:mac_aarch64": "deno compile -A --output dist/moroware_aarch64-apple-darwin --unstable --include gui_systems/main.ts --include gui_systems/ok.ts  --include gui_systems/no_ok.ts --target aarch64-apple-darwin main.ts",
+    "build:linux": "deno compile -A --output dist/x86_64-unknown-linux-gnu --unstable --include gui_systems/main.ts --include gui_systems/ok.ts  --include gui_systems/no_ok.ts --target x86_64-unknown-linux-gnu main.ts",
+    "build": "deno task build:win64 & deno task build:mac_x86_64 & deno task build:mac_aarch64 deno task build:linux"
+
+  },
+  "imports": {
+    "webview": "https://deno.land/x/webview@0.7.6/mod.ts",
+    "std/": "https://deno.land/std@0.184.0/"
+  }
+}
