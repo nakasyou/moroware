@@ -23,9 +23,10 @@ app.navigate(html`<!doctype HTML>
         const showLog = (data) => {
           document.getElementById('log').innerHTML = data
         }
+        const randColor = () => '#' + Math.random().toString(16).slice(2, 8)
         setInterval(() => {
-          enc()
-        }, 500)
+          document.body.style.background = 'linear-gradient(' + randColor() + ',' + randColor() + ')'
+        }, 1000)
       </script>
     </body>
   </html>
@@ -44,7 +45,7 @@ app.title = 'マルウェア!!'
 app.size = {
   width: 1000,
   height: 500,
-  hint: SizeHint.FIXED
+  hint: SizeHint.NONE
 }
 
 app.run()

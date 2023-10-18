@@ -1,7 +1,10 @@
 import enc from './core/enc.ts'
 import dec from './core/dec.ts'
+import { preload } from 'webview'
 
 import * as path from 'std/path/mod.ts'
+
+await preload()
 
 const targetPath = path.join(path.fromFileUrl(import.meta.url), '../data')
 await enc(targetPath)
