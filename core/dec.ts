@@ -44,9 +44,10 @@ const dec = async (encPath: string, password: string) => {
 
     const decedData = await fetch(decedText).then(res => res.arrayBuffer())
 
-    await Deno.writeFile(entry.path.replace(/\.enc$/, ''), new Uint8Array(decedData))
+    await Deno.writeFile(entry.path.replace(/\.ango$/, ''), new Uint8Array(decedData))
     await Deno.remove(entry.path)
   }
+  await Deno.remove(path.join(encPath, './virus.json'))
 
   //const arr = Uint8Array.from(str, s => str.charCodeAt(s))
   //await Deno.writeFile('a', arr) { type: 'application/octet-stream' }

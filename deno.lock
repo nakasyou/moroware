@@ -2,23 +2,14 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "npm:crypto-js": "npm:crypto-js@4.1.1",
       "npm:zod@3.22.4": "npm:zod@3.22.4"
     },
     "npm": {
-      "crypto-js@4.1.1": {
-        "integrity": "sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==",
-        "dependencies": {}
-      },
       "zod@3.22.4": {
         "integrity": "sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==",
         "dependencies": {}
       }
     }
-  },
-  "redirects": {
-    "https://esm.sh/crypto-js": "https://esm.sh/crypto-js@4.1.1",
-    "https://esm.sh/zod": "https://esm.sh/zod@3.22.4"
   },
   "remote": {
     "https://deno.land/std@0.184.0/_util/asserts.ts": "178dfc49a464aee693a7e285567b3d0b555dc805ff490505a8aae34f9cfb1462",
@@ -57,8 +48,6 @@
     "https://deno.land/x/webview@0.7.6/src/ffi.ts": "b86e4bc26e31d78e4fed1e19551c412654fbccf29066ea6f68edeb7821bb8032",
     "https://deno.land/x/webview@0.7.6/src/webview.ts": "063a64685c2d3946ef29722a7e9c1dac475c1a029fb713fc6abe3c950fe208f6",
     "https://esm.sh/crypto-js@4.1.1": "4a23b5a6fa667557d2bf6ca4b8004e0ee5b4fe9fe0f4124abdd6ea347342437b",
-    "https://esm.sh/v133/crypto-js@4.1.1/denonext/crypto-js.mjs": "b25d264259764a5c95fe9dfe04820d3aa6b22e063776db1dd1d0e7ac2e106eb3",
-    "https://esm.sh/v133/zod@3.22.4/denonext/zod.mjs": "660128af5d1e921745c4d452472d103d9f2fc5afa508bbf233b83d35a272ad67",
-    "https://esm.sh/zod@3.22.4": "fb3df591328a7b9662e972aa3bdbab19efdbabda9c89ade59ecedfc100bafe34"
+    "https://esm.sh/v133/crypto-js@4.1.1/denonext/crypto-js.mjs": "b25d264259764a5c95fe9dfe04820d3aa6b22e063776db1dd1d0e7ac2e106eb3"
   }
 }

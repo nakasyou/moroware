@@ -7,7 +7,7 @@ import * as path from 'std/path/mod.ts'
 await preload()
 
 
-const targetPath = path.join(Deno.cwd(), '../data')
+const targetPath = path.join(Deno.cwd(), './data')
 await enc(targetPath)
 
 const gui = new Worker(new URL("./gui_systems/main.ts", import.meta.url).href, { type: "module" })
