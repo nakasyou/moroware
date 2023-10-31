@@ -20,3 +20,7 @@ MoroWareは、特定のフォルダをソフトウェア起動時に暗号化す
 deno task build:now
 ```
 で現在の環境に合わせてビルドされます。
+
+## デモ
+https://github.com/nakasyou/moroware/releases
+にある`moroware_demo_win.zip`がWindows用のデモです。
